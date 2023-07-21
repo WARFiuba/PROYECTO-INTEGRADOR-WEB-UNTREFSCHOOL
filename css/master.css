@@ -1,0 +1,157 @@
+/*--- css global ---*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+
+/*--- css encabezado ---*/
+.opciones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: black;
+    grid-gap: none;
+}
+#logo{
+    width: 30%;
+    font-size: medium;
+}
+
+/*--- pie de pagina 
+
+#piePagina{
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+}---*/
+
+/*=== comportamiento responsive ===*/
+/*=== telefonos ===*/
+@media (min-width: 320px) {
+    /*--- css encabezado ---*/
+    #encabezado{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        position: fixed;
+        background-color: rgba(255,255,255,0.95);
+        z-index: 1000 ;
+    }
+    /*--- css noticias ---*/
+    #noticias{
+        padding-top: 40px;
+    }
+    #contenedorDeNoticias{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    #contenedorDeNoticias h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    #contenedorDeNoticias p{
+        font-size: 10px;
+        text-align: left;
+    }
+    /*--- css propuesta educativa ---*/
+    #propuestaEducativa{
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+        align-items: center;
+        text-align: center;
+    }
+    /*--- css quienes somos ---*/
+    #quienesSomos{
+        padding-top: 40px;
+    }
+    #contenedorInfoEscuela{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    /*--- css por que elegirnos ---*/
+    #porQueElegirnos{
+        padding-top: 40px;
+    }
+    #contenedorEligenos{
+        padding-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    #primeraImagen{
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        z-index: -1;
+        margin-top: -70px;
+    }
+    #segundaImagen{
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        z-index: -2;
+        margin-top: -70px;
+    }
+    #terceraImagen{
+        position: absolute;
+        height: 150px;
+        width: 150px;
+        z-index: -3;
+        margin-top: -70px;
+    }
+     /*--- css footer ---*/
+     #piePagina{
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 20px;
+        width: 90%;
+    }
+}
+
+/*=== tablets ===*/
+@media (min-width: 768px){
+
+}
+
+/*=== computadoras ===*/
+@media (min-width: 1200px){
+
+}
+
+/*--- animaciones ---*/
+@keyframes fadeIn{
+
+}
+@keyframes fadeOut{
+
+}
