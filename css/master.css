@@ -1,5 +1,6 @@
 /*--- css global ---*/
 *{
+    background-color: #FC7300;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,79 +12,67 @@ img{
 ul{
     list-style-type: none;
 }
+ul li a{
+    text-decoration: none;
+}
 html{
     scroll-behavior: smooth;
 }
 a{
     text-decoration: none;
 }
+h2{
+    font-family: 'Belanosima', sans-serif;
+    color: #00425A;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+}
 
 /*--- css encabezado ---*/
-.opciones{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    color: black;
-    grid-gap: none;
+#navbar{
+    position: fixed;
+    width: 100%;
+    font-family: 'Belanosima', sans-serif;
 }
-#logo{
-    width: 30%;
-    font-size: medium;
-}
-
-/*--- pie de pagina 
-
-#piePagina{
-    padding-top: 50px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 20px;
-}---*/
 
 /*=== comportamiento responsive ===*/
 /*=== telefonos ===*/
 @media (min-width: 320px) {
-    /*--- css encabezado ---*/
-    #encabezado{
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-        position: fixed;
-        background-color: rgba(255,255,255,0.95);
-        z-index: 1000 ;
-    }
     /*--- css noticias ---*/
     #noticias{
-        padding-top: 40px;
+        padding-top: 70px;
     }
     #contenedorDeNoticias{
         padding-top: 20px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 20px;
         align-items: center;
     }
     #contenedorDeNoticias h2{
         font-size: 20px;
         text-align: center;
+        font-family: 'Belanosima', sans-serif;
     }
     #contenedorDeNoticias p{
         font-size: 10px;
         text-align: left;
+        font-family: 'Poppins', sans-serif;
+
     }
     /*--- css propuesta educativa ---*/
     #propuestaEducativa{
-        padding-top: 40px;
+        padding-top: 70px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
         grid-gap: 10px;
         align-items: center;
         text-align: center;
     }
     /*--- css quienes somos ---*/
     #quienesSomos{
-        padding-top: 40px;
+        padding-top: 70px;
     }
     #contenedorInfoEscuela{
         padding-top: 20px;
@@ -94,9 +83,6 @@ a{
         align-items: center;
     }
     /*--- css por que elegirnos ---*/
-    #porQueElegirnos{
-        padding-top: 40px;
-    }
     #contenedorEligenos{
         padding-top: 30px;
         display: grid;
@@ -110,21 +96,20 @@ a{
         height: 150px;
         width: 150px;
         z-index: -1;
-        margin-top: -70px;
+
     }
     #segundaImagen{
         position: absolute;
         height: 150px;
         width: 150px;
         z-index: -2;
-        margin-top: -70px;
+
     }
     #terceraImagen{
         position: absolute;
         height: 150px;
         width: 150px;
         z-index: -3;
-        margin-top: -70px;
     }
      /*--- css footer ---*/
      #piePagina{
@@ -134,7 +119,13 @@ a{
         justify-items: center;
         align-items: center;
         grid-gap: 20px;
-        width: 90%;
+    }
+    ion-icon {
+        font-size: 20px;
+        color: #181823;
+    }
+    #contacto{
+        color: #1F8A70;
     }
 }
 
@@ -145,6 +136,106 @@ a{
 
 /*=== computadoras ===*/
 @media (min-width: 1200px){
+     /*--- css noticias ---*/
+     #noticias{
+        padding-top: 70px;
+        color: #00425A;
+    }
+    #contenedorDeNoticias{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    #contenedorDeNoticias h2{
+        font-size: 20px;
+        text-align: center;
+        color: #00425A;
+    }
+    #contenedorDeNoticias p{
+        font-size: 12px;
+        text-align: left;
+        color: black;
+    }
+    /*--- css propuesta educativa ---*/
+    #propuestaEducativa{
+        padding-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+        align-items: center;
+        text-align: center;
+        color: #00425A;
+    }
+    /*--- css quienes somos ---*/
+    #quienesSomos{
+        padding-top: 70px;
+        color: #00425A;
+    }
+    #contenedorInfoEscuela{
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    /*--- css por que elegirnos ---*/
+    #porQueElegirnos{
+        padding-top: 70px;
+        color: #00425A;
+    }
+    #contenedorEligenos{
+        padding-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 20px;
+        align-items: center;
+    }
+    #primeraImagen{
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        z-index: -1;
+        margin-top: -150px;
+    }
+    #segundaImagen{
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        z-index: -2;
+        margin-top: -150px;
+    }
+    #terceraImagen{
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        z-index: -3;
+        margin-top: -150px;
+    }
+     /*--- css footer ---*/
+     #piePagina{
+        margin-top: 150px;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-items: center;
+        align-items: center;
+        grid-gap: 20px;
+        width: 100%;
+        font-family: 'Belanosima', sans-serif;
+        color: #00425A;
+    }
+    ion-icon {
+        font-size: 50px;
+        color: #181823;
+    }
+    #contacto{
+        color: #1F8A70;
+    }
 
 }
 

@@ -1,0 +1,30 @@
+/*--- css global ---*/
+*{
+    background-color: #FC7300;
+    box-sizing: border-box;
+}
+
+
+/*=== comportamiento responsive ===*/
+/*=== telefonos ===*/
+@media (min-width: 320px) {
+}
+
+/*=== tablets ===*/
+@media (min-width: 768px){
+
+}
+
+/*=== computadoras ===*/
+@media (min-width: 1200px){
+    #cuadrosDeTexto{
+        display: grid;
+        grid-template-columns: 0.2fr 0.2fr;
+        grid-template-rows: 1fr;
+        margin-left: 50px;
+    }
+    #boton{
+        margin-left: 50px;
+    }
+
+}
